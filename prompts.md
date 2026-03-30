@@ -19,3 +19,15 @@ Run this, test it, proof that it works, document all your findings in a findings
 You can create a repo called `uvx-static-assets-test` from the current directory using the `gh` CLI tool, and then create the necessary files in that repo, commit and push them, and then run the `uvx` command to test if it works. Document all your findings in a `findings.md` file in the same repo.
 
 (Commit and push prompts.md which I'm editing.)
+
+---
+
+Simplify this to the least amount of code and least number of files possible. Ideally, we would have:
+
+- A single Python script, no more. Directly at the repo root, not under src/**. No tests.
+- A single messages.txt at the repo root.
+- .gitignore, pyproject.toml, uv.lock, findings.md, prompts.md are fine.
+
+Simpify the Python script to the ABSOLUTELY smallest size possible. Maybe even just 10 lines. The aim is to show the smallest possible proof of concept.
+
+Run, test and verify.
