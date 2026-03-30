@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "uvx-static-assets-test"
 version = "0.1.0"
 description = "CLI demo that proves uvx can install packaged static assets from GitHub."
+readme = "findings.md"
 requires-python = ">=3.12"
 dependencies = ["click>=8.1,<9"]
 
