@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uvx-static-assets-test"
+version = "0.1.0"
+description = "CLI demo that proves uvx can install packaged static assets from GitHub."
+requires-python = ">=3.12"
+dependencies = ["click>=8.1,<9"]
+
+[project.scripts]
+uvx-static-assets-test = "uvx_static_assets_test.cli:cli"
+
+[dependency-groups]
+dev = ["pytest>=8.4,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+uvx_static_assets_test = ["templates/*.txt"]

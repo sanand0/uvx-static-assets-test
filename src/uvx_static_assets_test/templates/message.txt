@@ -1,0 +1,4 @@
+Hello, $name!
+
+This report was rendered for the $project project from the $branch branch.
+It proves the CLI can load this packaged text template as a static asset at runtime.
